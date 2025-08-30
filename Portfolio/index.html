@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+
+        <!-- Indicador de progresso do scroll -->
+        <div class="scroll-progress"></div>
+
+        <header>
+
+            <nav class="menu-underline">
+
+                <a href="#parallax1">Início</a>
+                <a href="#parallax2">Acadêmico</a>
+                <a href="#parallax3">Projetos</a>
+                <a href="#parallax4">Habilidades</a>
+                <a href="#parallax5">Contato</a>
+                <div class="underline"></div>
+
+            </nav>
+
+        </header>
+
+        <div class="parallax parallax1" id="parallax1">
+
+            <div class="container">
+
+                <img src="gifs/digitando.gif" id="digitando" alt="Digitando">
+
+                <div class="container-inicio" id="inicio">
+                    
+                    <h1>Carlos Henrique</h1>
+
+                    <p><strong>Resumo: </strong>Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 4º semestre, 
+                        e tenho grande entusiasmo em iniciar minha carreira na área de TI. Apesar de estar começando, tenho dedicado 
+                        meu tempo ao aprendizado de linguagens de programação como Java, Python e MySQL, além de desenvolver projetos 
+                        como integrações na web e sistemas de estoque em Java. Também estou focado em aprimorar minhas habilidades em 
+                        Java e em alcançar fluência no inglês, idioma pelo qual tenho grande interesse. Meu objetivo é atuar em 
+                        projetos relacionados à construção de Inteligências Artificiais e automação de sistemas, buscando sempre 
+                        expandir meus conhecimentos. Estou aberto a novas oportunidades que me permitam aplicar minhas habilidades, 
+                        aprender com profissionais experientes e contribuir para o crescimento da equipe. Tenho dedicação, vontade de 
+                        aprender e o compromisso de evoluir na área de TI. </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        
+
+        <div class="parallax parallax2" id="parallax2">
+
+            <div class="container">
+
+                <div class="container-academico" id="academico">
+                
+                    <h1>Formações e cursos</h1>
+
+                    <div class="cards">
+
+                        <div class="card" id="faculdade">
+
+                            <h2>Análise e Desenvolvimento de Sistemas</h2>
+
+                            <p>Graduação em andamento em Análise e Desenvolvimento de Sistemas 
+                                pela faculdade Projeção. Teve início no primeiro semestre de 2024 
+                                e atualmente no 4° semestre.</p>
+
+                        </div>
+
+                        <div class="card" onclick="abrirModal('udemy')">
+
+                            <h2>Curso de HTML, CSS e JavaScript</h2>
+
+                            <p>Curso completo de HTML, CSS, JavaScript e MongoDB da plataforma Ûdemy(243 horas). 
+                                Com foco em JavaScript, trabalhamos nas interações do usuário com o site...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        
+
+        <div class="parallax parallax3" id="parallax3">
+
+            <div class="container-projetos" id="projetos">
+
+
+                <h2>Meus projetos</h2>
+
+                <div class="cards">
+
+                    <div class="card" onclick="abrirModal('game')">
+
+                        <h3>Protótipo do DOOM na web</h3>
+
+                        <p>Desenvolvi um protótipo do DOOM na web com HTML, CSS, JavaScript e python. A princípio, era idealizado
+                            um jogo de terror com uma implementação na web e uma leve interação entre os jogadores por meio de 
+                            um ranking. Foi um projeto de teor acadêmico, onde o foco era demonstrar um certo nivel de domínio...
+                        </p>
+
+                    </div>
+
+                    <div class="card" onclick="abrirModal('estoque')">
+
+                        <h3>Sistema de estoque em Java</h3>
+
+                        <p>Desenvolvi um sistema de estoque em Java, onde o usuário pode cadastrar, editar e excluir produtos,
+                            além de realizar o gerenciamento de outros usuários (ADM). O sistema utiliza um banco de dados 
+                            MySQL para armazenar as informações...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="parallax parallax4" id="parallax4">
+
+            <div class="container">
+
+                <img src="gifs/neuronios.gif" id="cerebro" alt="Cérebro girante">
+
+                <div class="container-habilidades" id="habilidades">
+
+                    <h2>Minhas habilidades</h2>
+
+                    <ul>
+                        <li>Criação de sites responsivos em HTML, CSS e JavaScript</li>
+                        <li>Interações do usuário com JavaScript</li>
+                        <li>DML, DDL e DQL no MySQL(básico)</li>
+                        <li>Gerenciamento de Git(básico)</li>
+                        <li>Power BI e Power Automate(básico)</li>
+                        <li>Pacote office(intermediário)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        
+
+
+        <div class="parallax parallax5" id="parallax5">
+
+            <div class="container-contato" id="contato">
+
+                <h2>Contato</h2>
+
+                <ul>
+                    <li><a href="carloshrr1209@gmail.com"><img src="gifs/gmail.gif" alt="Icone Gmail"></a></li>
+                    <li><a href=""><img src="gifs/instagram.gif" alt="Icone Instagram"></a></li>
+                    <li><a href="http://www.linkedin.com/in/carlos-henrique-790988247"><img src="gifs/linkedin.gif" alt="Icone Linkedin"></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="modal" id="modal-udemy" style="display: none;">
+
+            <div class="container-modal">
+
+                <span class="fechar">&times;</span>
+
+                <h1>Curso JavaScript do Básico ao Avançado + 130 Projetos Reais </h1>
+
+                <h2><small>Pofessor Clevison Santos</small></h2>
+
+                <img src="gifs/curso.gif" alt="Gif digitando">
+
+                <h3>Conteúdo do curso: </h3>
+
+                <ul>
+                    <li>JavaScript: Conceitos fundamentais como variáveis, tipos de dados, funções, loops, array, condicionais e Programação Orientada a Objeto.</li>
+                    <li>Mais de 130 projetos Reais para elevar seu conhecimento, valorizar seu currículo e enriquecer seu portfólio.</li>
+                    <li>HTML: Aprender a estrutura básica das páginas web, incluindo tags, atributos, elementos e semântica do HTML e muito mais.</li>
+                    <li>CSS: Uso de CSS para formatar e layout de páginas web, incluindo o entendimento de seletores, propriedades, modelos de caixa, flexbox, grid e muito mais.</li>
+                    <li>DOM Manipulation: Técnicas para selecionar, modificar e interagir com elementos HTML através do Document Object Model (DOM) usando JavaScript.</li>
+                    <li>Event Handling: Como lidar com eventos do usuário, como cliques, movimento do mouse, e entradas do teclado para criar uma experiência de usuário dinâmica.</li>
+                    <li>MongoDB: Integração com o MongoDB para criar sistemas com JavaScript, HTML e CSS com integração ao Banco de Dados.</li>
+                </ul>
+
+                <p>Para mais detalhes, acesse: 
+                    <a href="https://www.udemy.com/share/10baAO3@6SzLnGFkgvBVR42dEeVpxCpGQYfNFvEjKLr-5slkzf_JdDlwOxH5FGcnhHR4qHiS_w==/" 
+                    target="_blank">Curso JavaScript do Básico ao Avançado + 132 Projetos Reais</a></p>
+
+            </div>
+
+        </div>
+
+        <div class="modal" id="modal-game"style="display: none;">
+
+            <div class="container-modal">
+
+                <span class="fechar">&times;</span>
+
+                <h1>Protótipo do DOOM na web</h1>
+
+                <p>Desenvolvi um protótipo do DOOM na web com HTML, CSS, JavaScript e python. A princípio, era idealizado
+                    um jogo de terror com uma implementação na web e uma leve interação entre os jogadores por meio de 
+                    um ranking. Foi um projeto de teor acadêmico, onde o foco era demonstrar um certo nivel de domínio 
+                    e conhecimento na linguagem de programação Python(tanto na criação do jogo em si, quanto no backend do site).
+                </p>
+
+                <h2>Tecnologias utilizadas</h2>
+
+                <ul>
+                    <li>Pygame - Para criação do jogo</li>
+                    <li>Pygbag - Para implementação do jogo na web(Web Assembly)</li>
+                    <li>JavaScript - Para interação do usuário no site</li>
+                    <li>Python - Para o jogo e o back-end do site</li>
+                    <li>HTML - Para o layout do site</li>
+                    <li>CSS - Para o layout do site</li>
+                </ul>
+
+                <p>Para mais detalhes, acesse: 
+                    <a href="https://github.com/carloshenrique2701/Projeto_Game" target="_blank">Repositorio do projeto</a></p>
+
+                <img src="gifs/game.gif" alt="Demonstração">
+
+            </div>
+
+        </div>
+
+        <div class="modal" id="modal-estoque" style="display: none;">
+
+            <div class="container-modal">
+
+                <span class="fechar">&times;</span>
+
+                <h1>Estoque de produtos</h1>
+
+                <p>Desenvolvi um sistema de estoque em Java, onde o usuário pode cadastrar, editar e excluir produtos,
+                    além de realizar o gerenciamento de outros usuários (ADM). O sistema utiliza um banco de dados 
+                    MySQL para armazenar as informações localmente. Ao criar um controle de acesso baseado em roles,
+                    o sistema garante que apenas os usuários com permissões adequadas tenham acesso ao sistema.
+                </p>
+
+                <h2>Características</h2>
+
+                <ul>
+                    <li>Sistema de Autenticação Robusto - Login seguro com controle de permissões</li>
+                    <li>Gestão de Usuários - Suporte a múltiplos tipos de usuário (Administrador/Gerente)</li>
+                    <li>Controle de Produtos - CRUD completo com validações</li>
+                    <li>Gestão de Fornecedores - Cadastro e vinculação com produtos</li>
+                    <li>Interface Intuitiva - Design responsivo com abas organizadas</li>
+                    <li>Edição em Tempo Real - Modificação direta na tabela de dados</li>
+                    <li>Ordenação Automática - Listas organizadas por ID crescente</li>
+                    <li>Interface Personalizável - Campos de input com tamanhos ajustáveis</li>
+                </ul>
+
+                <p><span>Observação Importante:</span> O código do sistema foi feito 80% em IA, o intuito desse projeto era, 
+                    além de entender como funcionava uma estrutura MVC, era a criação de diagramas UML para 
+                    documentação(em teor acadêmico).
+                </p>
+
+                <p>Para mais detalhes, acesse: 
+                    <a href="https://github.com/carloshenrique2701/Sistema-de-Estoque" target="_blank">Repositorio do projeto</a></p>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p>&copy; 2025 Portfólio profissional. Todos os direitos reservados. GitHub: <a href="https://github.com/carloshenrique2701" target="_blank">carloshenrique2701</a></p>
+
+        </footer>
+
+        <!-- Botão voltar ao topo -->
+        <button class="back-to-top" title="Voltar ao topo">↑</button>
+
+        <script src="js/script.js"></script>
+
+        
+    </body>
+</html>
