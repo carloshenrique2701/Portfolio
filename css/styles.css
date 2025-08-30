@@ -634,6 +634,32 @@ footer a:active{
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    /* Posições do underline para links ativos */
+.menu-underline a.active:nth-child(1) ~ .underline {
+    transform: translateX(140px) !important;
+    background-color: #ffcd0a !important;
+  }
+  
+  .menu-underline a.active:nth-child(2) ~ .underline {
+    transform: translateX(282px) !important;
+    background-color: #00cad2 !important;
+  }
+  
+  .menu-underline a.active:nth-child(3) ~ .underline {
+    transform: translateX(420px) !important;
+    background-color: #c80000 !important;
+  }
+  
+  .menu-underline a.active:nth-child(4) ~ .underline {
+    transform: translateX(565px) !important;
+    background-color: #a07b0a !important;
+  }
+  
+  .menu-underline a.active:nth-child(5) ~ .underline {
+    transform: translateX(700px) !important;
+    background-color: #1da011 !important;
+  }
     
     .menu-underline a {
         width: auto;
