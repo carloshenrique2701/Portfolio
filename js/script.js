@@ -35,8 +35,12 @@ function abrirModal(modalName) {
             modal = document.getElementById('modal-game');
             break;
 
-        case 'estoque':
-            modal = document.getElementById('modal-estoque');
+        case 'treeView':
+            modal = document.getElementById('modal-treeView');
+            break;
+
+        case 'tcc-enfermagem':
+            modal = document.getElementById('modal-enfermagem');
             break;
     
         default:
