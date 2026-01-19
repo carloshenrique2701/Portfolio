@@ -2,7 +2,7 @@
 
 ## 📋 Sobre 
 
-Portfólio profissional desenvolvido com HTML, CSS e JavaScript, apresentando minha trajetória acadêmica, projetos e Sofy/Hard Skills.
+Portfólio profissional desenvolvido com HTML, CSS e JavaScript, apresentando minha trajetória acadêmica, projetos e Soft/Hard Skills.
 
 
 ## �� Contato
