@@ -1,461 +1,761 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio</title>
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/styles.css">
-
+        
     </head>
     <body>
-
-        <!-- Indicador de progresso do scroll -->
-        <div class="scroll-progress"></div>
-
-        <header>
-
-            <nav class="menu-underline">
-
-                <a href="#parallax1">Início</a>
-                <a href="#parallax2">Acadêmico</a>
-                <a href="#parallax3">Projetos</a>
-                <a href="#parallax4">Habilidades</a>
-                <a href="#parallax5">Contato</a>
-                <div class="underline"></div>
-
-            </nav>
-
-        </header>
-
-        <div class="parallax parallax1" id="parallax1">
-
-            <div class="container-inicio" id="inicio">
-                <img src="gifs/digitando.gif" id="digitando" alt="Digitando">
-                <h1>Carlos Henrique</h1>
-
-                <p><strong>Resumo: </strong>Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 4º semestre, 
-                    e tenho grande entusiasmo em iniciar minha carreira na área de TI. Apesar de estar começando, tenho dedicado 
-                    meu tempo ao aprendizado de linguagens de programação como Java, Python e MySQL, além de desenvolver projetos 
-                    como integrações na web e sistemas de estoque em Java. Também estou focado em aprimorar minhas habilidades em 
-                    Java e em alcançar fluência no inglês, idioma pelo qual tenho grande interesse. Meu objetivo é atuar em 
-                    projetos relacionados à construção de Inteligências Artificiais e automação de sistemas, buscando sempre 
-                    expandir meus conhecimentos. Estou aberto a novas oportunidades que me permitam aplicar minhas habilidades, 
-                    aprender com profissionais experientes e contribuir para o crescimento da equipe. Tenho dedicação, vontade de 
-                    aprender e o compromisso de evoluir na área de TI. </p>
-
-            </div>
-
-        </div>
-
-
         
-        
+        <main>
 
-        <div class="parallax parallax2" id="parallax2">
+            <div class="sidebar">
 
-            <div class="container">
+                <header>
 
-                <div class="container-academico" id="academico">
-                
-                    <h1>Formações e cursos</h1>
-
-                    <div class="cards">
-
-                        <div class="card-faculdade" id="faculdade">
-
-                            <h2>Análise e Desenvolvimento de Sistemas</h2>
-
-                            <p>Graduação em andamento em Análise e Desenvolvimento de Sistemas 
-                                pela faculdade Projeção. Teve início no primeiro semestre de 2024 
-                                e atualmente no 4° semestre.</p>
-
-                        </div>
-
-                        <div class="card" onclick="abrirModal('udemy')">
-
-                            <h2>Curso de HTML, CSS e JavaScript</h2>
-
-                            <p>Curso completo de HTML, CSS, JavaScript e MongoDB da plataforma Ûdemy(243 horas). 
-                                Com foco em JavaScript, trabalhamos nas interações do usuário com o site...
-                            </p>
-
-                        </div>
-
+                    <!-- From Uiverse.io by PauloRFJ --> 
+                    <div class="cardner">
+                        <a class="socialContainer containerOne" href="https://www.instagram.com/_carloshenri27" target="_blank">
+                        <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+                            <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                            ></path>
+                        </svg>
+                        </a>
+                    
+                        <a class="socialContainer containerTwo" href="https://x.com/CHenrique66842?t=LErDiTurgSRmQYG_g0IwRw&s=08" target="_blank">
+                        <svg
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="socialSvg twitterSvg"
+                        >
+                            <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                            ></path>
+                        </svg>
+                        </a>
+                    
+                        <a class="socialContainer containerThree" href="http://www.linkedin.com/in/carlos-henrique-790988247" target="_blank">
+                        <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                            <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                            ></path>
+                        </svg>
+                        </a>
+                    
+                        <a class="socialContainer containerFour" href="mailto:carloshrr1209@gmail.com">
+                        <svg
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="socialSvg whatsappSvg"
+                        >
+                            <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                            ></path>
+                            <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                            ></path>
+                        </svg>
+                        </a>
                     </div>
 
-                </div>
+                </header>
 
             </div>
+    
+            <div class="parallax parallax1" id="mustang">
+    
+                <div class="parallax-bg"></div>
+                <div class="conteudo">
 
-        </div>
-
-
-        
-        
-
-        <div class="parallax parallax3" id="parallax3">
-
-           <div class="container">
-
-                <div class="container-projetos" id="projetos">
-
-
-                    <h2>Meus projetos</h2>
-
-                    <div class="cards">
-
-                        <div class="card" onclick="abrirModal('game')">
-
-                            <h3>Protótipo do DOOM na web</h3>
-
-                            <p>Desenvolvi um protótipo do DOOM na web com HTML, CSS, JavaScript e python. A princípio, era idealizado
-                                um jogo de terror com uma implementação na web e uma leve interação entre os jogadores por meio de 
-                                um ranking. Foi um projeto de teor acadêmico, onde o foco era demonstrar um certo nivel de domínio...
-                            </p>
-
+                    <div class="secao1">
+    
+                        <div class="content-section1">
+    
+                            <h1>Carlos Henrique</h1>
+                            <h3>Desenvolvedor Frontend | Estudante | Desenvolvedor Backend</h3>
+    
                         </div>
 
-                        <div class="card" onclick="abrirModal('treeView')">
+                        <div class="gifs">
 
-                            <h3>TreeView de funcionários</h3>
-
-                            <p>Desenvolvi um script que lê um arquivo .xlsx(excel) e faz uma TreeView das duas primeiras colunas, onde 
-                                conseguimos fazer uma análise de funcionários por cargo em um determinado departamento. Também é possível 
-                                ver as informações de cada funcionário, pois a tabela "puxa" as outras colunas e preenche com os dados...
-                            </p>
+                            <img class="gif1" src="gifs/digitando.gif" alt="">
 
                         </div>
-                        <div class="card" onclick="abrirModal('tcc-enfermagem')">
-
-                            <h3>Página Informativa Voltada para um Público Jovem Feminino</h3>
-
-                            <p>Desenvolvi uma páginada web voltada para um público jovem feminino, com o objetivo de informar sobre 
-                                menstruação, cuidados, como e onde conseguir ajuda e etc. Foi um projeto feito para uma apresentação 
-                                de TCC(Trabalho de Conclusão de Curso) para algumas meninas da faculdade de Enfermagem...
-                            </p>
-
-                        </div>
-
+    
                     </div>
-
-                </div>
-
-           </div>
-
-        </div>
-
-
-        
-
-        <div class="parallax parallax4" id="parallax4">
-
-            <div class="container">
-
-                <img src="gifs/neuronios.gif" id="cerebro" alt="Cérebro girante">
-
-                <div class="container-habilidades" id="habilidades">
-
-                    <h2>Minhas habilidades</h2>
-
-                    <ul>
-                        <li>Criação de sites responsivos em HTML, CSS e JavaScript</li>
-                        <li>Interações do usuário com JavaScript</li>
-                        <li>DML, DDL e DQL no MySQL(básico)</li>
-                        <li>Gerenciamento de Git(básico)</li>
-                        <li>Power BI e Power Automate(básico)</li>
-                        <li>Pacote office(intermediário)</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
-        
-        
-
-
-        <div class="parallax parallax5" id="parallax5">
-
-            <div class="container-contato" id="contato">
-
-                <h2 style="color:rgb(24, 158, 111)">Contato</h2>
-
-                <!-- From Uiverse.io by PauloRFJ --> 
-                <div class="cardner">
-                    <a class="socialContainer containerOne" href="https://www.instagram.com/_carloshenri27" target="_blank">
-                    <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-                        <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                        ></path>
-                    </svg>
-                    </a>
-                
-                    <a class="socialContainer containerTwo" href="https://x.com/CHenrique66842?t=LErDiTurgSRmQYG_g0IwRw&s=08" target="_blank">
-                    <svg
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        height="16"
-                        width="16"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="socialSvg twitterSvg"
-                    >
-                        <path
-                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
-                        ></path>
-                    </svg>
-                    </a>
-                
-                    <a class="socialContainer containerThree" href="http://www.linkedin.com/in/carlos-henrique-790988247" target="_blank">
-                    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
-                        <path
-                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                        ></path>
-                    </svg>
-                    </a>
-                
-                    <a class="socialContainer containerFour" href="mailto:carloshrr1209@gmail.com">
-                    <svg
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        height="16"
-                        width="16"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="socialSvg whatsappSvg"
-                    >
-                        <path
-                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
-                        ></path>
-                        <path
-                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
-                        ></path>
-                    </svg>
-                    </a>
-                </div>
-                
-
-            </div>
-
-        </div>
-
-
-
-        <div class="modal" id="modal-udemy" style="display: none;">
-
-            <div class="container-modal">
-
-                <span class="fechar">&times;</span>
-
-                <h1>Curso JavaScript do Básico ao Avançado + 130 Projetos Reais </h1>
-
-                <h2><small>Pofessor Clevison Santos</small></h2>
-
-                <img src="gifs/curso.gif" alt="Gif digitando">
-
-                <h3>Conteúdo do curso: </h3>
-
-                <ul>
-                    <li>JavaScript: Conceitos fundamentais como variáveis, tipos de dados, funções, loops, array, condicionais e Programação Orientada a Objeto.</li>
-                    <li>Mais de 130 projetos Reais para elevar seu conhecimento, valorizar seu currículo e enriquecer seu portfólio.</li>
-                    <li>HTML: Aprender a estrutura básica das páginas web, incluindo tags, atributos, elementos e semântica do HTML e muito mais.</li>
-                    <li>CSS: Uso de CSS para formatar e layout de páginas web, incluindo o entendimento de seletores, propriedades, modelos de caixa, flexbox, grid e muito mais.</li>
-                    <li>DOM Manipulation: Técnicas para selecionar, modificar e interagir com elementos HTML através do Document Object Model (DOM) usando JavaScript.</li>
-                    <li>Event Handling: Como lidar com eventos do usuário, como cliques, movimento do mouse, e entradas do teclado para criar uma experiência de usuário dinâmica.</li>
-                    <li>MongoDB: Integração com o MongoDB para criar sistemas com JavaScript, HTML e CSS com integração ao Banco de Dados.</li>
-                </ul>
-
-                <p>Para mais detalhes, acesse: 
-                    <a href="https://www.udemy.com/share/10baAO3@6SzLnGFkgvBVR42dEeVpxCpGQYfNFvEjKLr-5slkzf_JdDlwOxH5FGcnhHR4qHiS_w==/" 
-                    target="_blank">Curso JavaScript do Básico ao Avançado + 132 Projetos Reais</a></p>
-
-            </div>
-
-        </div>
-
-        <div class="modal" id="modal-game"style="display: none;">
-
-            <div class="container-modal">
-
-                <span class="fechar">&times;</span>
-
-                <h1>Protótipo do DOOM na web</h1>
-
-                <p>Desenvolvi um protótipo do DOOM na web com HTML, CSS, JavaScript e python. A princípio, era idealizado
-                    um jogo de terror com uma implementação na web e uma leve interação entre os jogadores por meio de 
-                    um ranking. Foi um projeto de teor acadêmico, onde o foco era demonstrar um certo nivel de domínio 
-                    e conhecimento na linguagem de programação Python(tanto na criação do jogo em si, quanto no backend do site).
-                </p>
-
-                <h2>Tecnologias utilizadas</h2>
-
-                <ul>
-                    <li>Pygame - Para criação do jogo</li>
-                    <li>Pygbag - Para implementação do jogo na web(Web Assembly)</li>
-                    <li>JavaScript - Para interação do usuário no site</li>
-                    <li>Python - Para o jogo e o back-end do site</li>
-                    <li>HTML - Para o layout do site</li>
-                    <li>CSS - Para o layout do site</li>
-                </ul>
-
-                <p>Para mais detalhes, acesse: 
-                    <a href="https://github.com/carloshenrique2701/Projeto_Game" target="_blank">Repositorio do projeto</a></p>
-
-                <img src="gifs/game.gif" alt="Demonstração">
-
-            </div>
-
-        </div>
-
-        <div class="modal" id="modal-treeView" style="display: none;">
-
-            <div class="container-modal">
-
-                <span class="fechar">&times;</span>
-
-                <h1>TreeView de Funcionários</h1>
-
-                <p>Desenvolvi um script que lê um arquivo .xlsx(excel) e faz uma TreeView das duas primeiras colunas, onde 
-                    conseguimos fazer uma análise de funcionários por cargo em um determinado departamento. Também é possível 
-                    ver as informações de cada funcionário, pois a tabela "puxa" as outras colunas e preenche com os dados dos 
-                    funcionários, tornando a tabela flexível ao número de tabelas do arquivo inserido. Além disso, também é 
-                    possível exportar essa tabela com os dados dos funcionários em um documento excel(.xlsx).
-                </p>
-
-                <h2>Características</h2>
-
-                <ul>
-                    <li>Foi utilizado: HTML, CSS e JavaScript apenas;</li>
-                    <li>Bibliotecas externas utilizadas: jstree, jquery e xlsx;</li>
-                    <li>Importação Inteligente de Planilhas;</li>
-                    <li>Visualização Hierárquica em Árvore 🌳;</li>
-                    <li>Processamento Dinâmico de Dados;</li>
-                    <li>Tabela Interativa com Filtros;</li>
-                    <li> Exportação de Resultados.</li>
-                </ul>
-
-                <p class="observacoes"><span>Observações Importantes:</span> 
-                    <ol>
-
-                        <li><strong>Ideal para:</strong> RH, Gestão de Pessoas, Análise Organizacional e Controle de Quadro de Funcionários;</li>
-                        <br>
-                        <li><strong>📋Formato da Planilha: </strong>
-                            <ul>
-                                <li>As duas primeiras colunas DEVEM ser: "Departamento" e "Cargo";</li>
-                                <li>A primeira linha DEVE conter os cabeçalhos das colunas;</li>
-                                <li>Arquivos devem estar no formato .xlsx (Excel).</li>
-                            </ul>
-                        </li>
-                        <br>
-                        <li><strong>🔄 Processamento de Dados:</strong>
-
-                            <ul>
-
-                                <li>Linhas com departamento ou cargo vazios serão ignoradas;</li>
-                                <li>O sistema mantém a formatação original da planilha;</li>
-                                <li>Suporte a caracteres especiais e acentuação.</li>
-
-                            </ul>
-
-                        </li>
-                        <br>
-                        <li><strong>📱 Compatibilidade:</strong>
-
-                            <ul>
-
-                                <li>Navegadores modernos (Chrome, Firefox, Edge);</li>
-                                <li>Planilhas geradas no Excel ou Google Sheets;</li>
-                                <li>Arquivos de até 10MB recomendados.</li>
-
-                            </ul>
-
-                        </li>
-                        <br>
-                        <li><strong>🔒 Segurança e Privacidade:</strong>
-
-                            <ul>
-
-                                <li>Processamento 100% local no navegador;</li>
-                                <li>Dados não são enviados para servidores externos;</li>
-                                <li>Download opcional dos resultados processados.</li>
-
-                            </ul>
-
-                        </li>
-                        <br>
-                        <li><strong>🎛️Funcionalidades de Navegação</strong>
-
-                            <ul>
-
-                                <li>Clique em qualquer cargo para visualizar os funcionários;</li>
-                                <li>Use a tabela para análise detalhada dos dados;</li>
-                                <li>Exporte os resultados a qualquer momento.</li>
-
-                            </ul>
-
-                        </li>
-                        <br>
-                        <li><strong>💡 Dica de Uso</strong>
-
-                            "Para melhor experiência, organize sua planilha com departamentos e
-                             cargos bem definidos nas duas primeiras colunas.As demais colunas 
-                             podem conter qualquer informação adicional sobre os funcionários."
-                            </li>
-                    </ol>
-                </p>
-
-                <p>Para mais detalhes, acesse: 
-                    <a href="https://github.com/carloshenrique2701/TreeView-de-Funcionarios" target="_blank">Repositorio do projeto.</a></p>
-                    <a href="https://carloshenrique2701.github.io/TreeView-de-Funcionarios/" target="_blank">Teste o projeto.</a></p>
                     
+                </div>
+    
             </div>
+    
+           
+    
+            <div class="parallax parallax2" id="tiggo">
+    
+                <div class="parallax-bg"></div>
+                <div class="conteudo">
+                
+                    <div class="secao2">
+    
+                        <div class="content-section2">
+    
+                            <h1>Projetos Realizados</h1>
+    
+                            <div class="card" id="blog">
+    
+                                <h2>Blog Simples com MongoDB</h2>
+    
+                                <p>Blog onde é possível realizar posts de imgens ou textos. O design é bem simples e prático, o usuário pode adicionar e excluir posts.
+                                </p>
+    
+                            </div>
+                            <div class="card" id="album">
+    
+                                <h2>Álbum de Fotos com MongoDB</h2>
+    
+                                <p>É um sistema onde o usuário pode criar um álbum de fotos, colocar uma capa específica em cada álbum e adicionar imagens.
+                                </p>
+    
+                            </div>
+                            <div class="card" id="estacionamento">
+    
+                                <h2>Sistema de Controle de Estacionamento com MongoDB</h2>
+    
+                                <p>É um sistema onde o usuário pode criar, editar e excluir uma reserva de uma vaga de estacionamento. Há também um gerênciamento de usuários.
+                                </p>
+    
+                            </div>
+                            <div class="card" id="supermercado">
+    
+                                <h2>Sistema Super Mercado Simples com MongoDB</h2>
+    
+                                <p>É um sistema onde o usuário pode gerenciar os produtos em estoque, usuários, clientes, fornecedores e relatórios de vendas em um certo período.
+                                </p>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+            
+            
+    
+            <div class="parallax parallax3" id="civic">
+    
+                <div class="parallax-bg"></div>
+                <div class="conteudo">
 
-        </div>
-        <div class="modal" id="modal-enfermagem" style="display: none;">
+                    <div class="secao3">
+    
+                        <img class="neuronios" src="gifs/neuronios.gif" alt="">
 
-            <div class="container-modal">
-
-                <span class="fechar">&times;</span>
-
-                <h1>Página Informativa Voltada para um Público Jovem Feminino</h1>
-
-                <p>Desenvolvi uma páginada web voltada para um público jovem feminino, com o objetivo de informar sobre 
-                    menstruação, cuidados, como e onde conseguir ajuda e etc. Foi um projeto feito para uma apresentação 
-                    de TCC(Trabalho de Conclusão de Curso) para algumas meninas da faculdade de Enfermagem. A pedido delas, 
-                    foi feito uma página informativa, onde elas mandaram todo o conteúdo e materiais necessários para que fosse 
-                    funcional e com um objetivo de ser responsivo para celulares. 
-                </p>
-
-                <h2>Características</h2>
-
-                <ul>
-                    <li>Foi utilizado: HTML, CSS e JavaScript apenas;</li>
-                    <li>Foi implementado um chat-bot simples;</li>
-                    <li>Utilização do algoritimo de Levshtein para o chat-bot;</li>
-                    <li>Animações e templetes externos em CSS causando uma boa experiência visual;</li>
-                    <li>Responsividade para aparelhos pequenos;</li>
-                </ul>
-
-               
-
-                <p>Para mais detalhes, acesse: 
-                    <a href="https://github.com/carloshenrique2701/TCC-Enfermagem" target="_blank">Repositorio do projeto.</a></p>
-                    <a href="https://carloshenrique2701.github.io/TCC-Enfermagem/" target="_blank">Visualize o projeto.</a></p>
+                        <div class="content-section3">
+    
+                            <div class="soft-skills">
+                                <h2>Soft Skills</h2>
+                                <ul>
+                                    <li>Trabalho em Grupo;</li>
+                                    <li>Boa Comunicação;</li>
+                                    <li>Resolução de Problemas;</li>
+                                    <li>Sempre em Busca de Aprender;</li>
+                                    <li>Foco no Melhor Resultado;</li>
+                                    <li>Dedicação até o Fim;</li>
+                                </ul>
+    
+                            </div>
+    
+                            <div class="hard-skills">
+    
+                                <h2>Hard Skills</h2>
+    
+                                <ul>
+                                    <li>NodeJS (básico);</li>
+                                    <li>JavaScript puro (básico);</li>
+                                    <li>MongoDB, MySQL, PostgreSQL (básico);</li>
+                                    <li>Versionamento Git (básico);</li>
+                                    <li>Algoritmos e Estruturas de Dados (básico);</li>
+                                    <li>HTML, CSS (Intermediário);</li>
+                                    <li>Inglês (Intermediário);</li>
+                                </ul>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
                     
+                </div>
+    
             </div>
+    
+            
+    
+            <footer>
+                <p>&copy;  Todos os direitos reservados.</p>
+            </footer>
 
+        </main>
+
+        <div class="modal" id="modal-blog">
+            <div class="modal-content">
+                <h2>📝 Sistema de Blog com Upload de Imagens</h2>
+                
+                <div class="project-details">
+                    <div class="tech-stack">
+                        <h3>🛠️ Stack Tecnológico</h3>
+                        <div class="tech-tags">
+                            <span class="tag frontend">JavaScript Vanilla</span>
+                            <span class="tag backend">Node.js + Express</span>
+                            <span class="tag database">MongoDB + Mongoose</span>
+                            <span class="tag middleware">Multer</span>
+                            <span class="tag security">CORS</span>
+                            <span class="tag tools">Fetch API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <h3>📋 Descrição do Sistema</h3>
+                        <p>Sistema full-stack CRUD para criação e gerenciamento de posts com upload de imagens, desenvolvido com arquitetura cliente-servidor e banco de dados NoSQL.</p>
+                        
+                        <div class="architecture">
+                            <h4>🏗️ Arquitetura Back-end</h4>
+                            <ul>
+                                <li><strong>Express.js</strong>: Framework para criação da API RESTful</li>
+                                <li><strong>Mongoose</strong>: ODM para modelagem de dados no MongoDB</li>
+                                <li><strong>Multer</strong>: Middleware para upload e redirecionamento de arquivos</li>
+                                <li><strong>CORS</strong>: Configuração de políticas de acesso entre origens</li>
+                                <li><strong>Path</strong>: Manipulação de caminhos de arquivos no servidor</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="features">
+                            <h4>✨ Funcionalidades Implementadas</h4>
+                            <div class="features-grid">
+                                <div class="feature-card">
+                                    <h5>📤 Upload Inteligente</h5>
+                                    <p>Middleware Multer gerencia uploads, redirecionando imagens para diretório dedicado (/uploads)</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h5>🗃️ Armazenamento Estruturado</h5>
+                                    <p>Mongoose define schemas para persistência eficiente no MongoDB</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h5>🔗 API RESTful</h5>
+                                    <p>Endpoints completos: GET, POST, DELETE com validações</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h5>🛡️ Segurança</h5>
+                                    <p>CORS configurado para controle de acesso e proteção de recursos</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="code-highlights">
+                            <h4>💡 Destaques do Código</h4>
+                            <pre><code>
+                                const Post = require('./models/Post');
+
+                                //Confira o armazenamento de arquivos no disco utilizando o "multer".
+                                //O objeto "multer.diskStorage" permite configurar onde e como os arquivos devem ser armazenados no servidor.
+                                const storage = multer.diskStorage({
+                                    //Determina o diretório onde os arquivos devem ser salvos.
+                                    destination: function (req, file, cb) {
+                                        //"callback" é usado para especificar o destino dos arquivos.
+                                        //O primeiro parâmetro é um possível erro (null se não houver erro), e o segundo é o caminho do diretório
+                                        cb(null, "uploads");
+                                    },
+
+                                    //Determina o nome do arquivo dentro do diretório de destino.
+                                    //Também é chamada sempre que um arquivo é recebido.
+                                    filename: function (req, file, cb) {
+                                        //Gera um sufixo único no arquifo para evitar asobreposição de nomes.
+                                        // Data atual - numero aleatório entre 0 e 1bi
+                                        //1e9 é conotação para 1 x 10^9 = 1bi
+                                        //Math.round => arredonda para o inteiro mais próximo.
+                                        const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9)
+
+                                        //Primeiro parâmetro define um possível erro, o segundo o m=nome do arquivo.
+                                        cb(null, uniqueSuffix + "-" + file.originalname)
+                                    }
+                                });
+
+                                //Instâcia com a configuração especificada acima. Será usada em rotas que recebem arquivos
+                                const upload = multer({ storage });
+                             </code></pre>
+                        </div>
+                        
+                        <div class="challenges">
+                            <h4>⚡ Desafios e Soluções</h4>
+                            <ul>
+                                <li><strong>Sincronização BD/FS</strong>: Coordenação entre registros no MongoDB e arquivos no sistema</li>
+                                <li><strong>Validação de FormData</strong>: Implementação de verificações no cliente e servidor</li>
+                                <li><strong>Gestão de CORS</strong>: Configuração para permitir comunicação segura entre domínios</li>
+                                <li><strong>Tratamento de Erros</strong>: Sistema robusto de fallback e feedback ao usuário</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                            <a href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20129%20-%20Blog%20simples%20com%20MongoDB" class="btn btn-primary">📁 Ver Código no GitHub</a>
+                    </div>
+                </div>
+                
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
+            </div>
         </div>
 
-        <footer>
+        <div class="modal" id="modal-album">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
+                <h2>Sistema de Galeria de Fotos com Backend API</h2>
+                
+                <div class="project-info">
+                    <div class="tech-stack">
+                        <h3>Tecnologias Utilizadas:</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Mongoose</span>
+                            <span class="tech-tag">JavaScript Vanilla</span>
+                            <span class="tech-tag">Multer</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <h3>Visão Geral do Projeto</h3>
+                        <p>Sistema completo de gerenciamento de álbuns de fotos com frontend web e backend API. A aplicação permite criar álbuns, adicionar fotos, visualizá-las em uma galeria interativa e baixar imagens individualmente.</p>
+                        
+                        <h3>Arquitetura do Sistema</h3>
+                        <ul>
+                            <li><strong>Frontend:</strong> HTML/JavaScript puro (sem frameworks)</li>
+                            <li><strong>Backend:</strong> Node.js com Express</li>
+                            <li><strong>Banco de Dados:</strong> MongoDB com Mongoose ODM</li>
+                            <li><strong>Armazenamento:</strong> Sistema de arquivos local com Multer</li>
+                        </ul>
+                        
+                        <h3>Funcionalidades Principais</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <h4>🎨 Gerenciamento de Álbuns</h4>
+                                <ul>
+                                    <li>Criação de álbuns com nome e capa opcional</li>
+                                    <li>Listagem visual em cards com prévias</li>
+                                    <li>Exclusão de álbuns completos</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <h4>📸 Gerenciamento de Fotos</h4>
+                                <ul>
+                                    <li>Upload de fotos com descrições</li>
+                                    <li>Visualização em grade e modal fullscreen</li>
+                                    <li>Navegação entre fotos (anterior/próxima)</li>
+                                    <li>Download individual otimizado com Blob API</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <h4>⚡ Interface Interativa</h4>
+                                <ul>
+                                    <li>Modal inteligente com navegação cíclica</li>
+                                    <li>Feedback visual durante upload</li>
+                                    <li>Fechamento por clique fora da imagem</li>
+                                    <li>Prevenção de propagação de eventos</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <h4>🔧 API RESTful</h4>
+                                <ul>
+                                    <li>CRUD completo para álbuns e fotos</li>
+                                    <li>Upload de arquivos com nomes únicos</li>
+                                    <li>Validação de entrada e tratamento de erros</li>
+                                    <li>Serviço de arquivos estáticos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h3>Endpoints da API</h3>
+                        <div class="api-endpoints">
+                            <div class="endpoint">
+                                <code>POST /api/albuns</code>
+                                <span>Criar novo álbum</span>
+                            </div>
+                            <div class="endpoint">
+                                <code>GET /api/albuns</code>
+                                <span>Listar todos os álbuns</span>
+                            </div>
+                            <div class="endpoint">
+                                <code>GET /api/albuns/:id</code>
+                                <span>Obter álbum específico</span>
+                            </div>
+                            <div class="endpoint">
+                                <code>POST /api/albuns/:id/fotos</code>
+                                <span>Adicionar foto ao álbum</span>
+                            </div>
+                            <div class="endpoint">
+                                <code>DELETE /api/albuns/:id</code>
+                                <span>Excluir álbum</span>
+                            </div>
+                            <div class="endpoint">
+                                <code>DELETE /api/albuns/:id/fotos/:fotoId</code>
+                                <span>Excluir foto específica</span>
+                            </div>
+                        </div>
+                        
+                        <h3>Recursos Técnicos Implementados</h3>
+                        <ul>
+                            <li><strong>Sistema de Modal Avançado:</strong> Navegação cíclica, fechamento inteligente, prevenção de propagação</li>
+                            <li><strong>Download Otimizado:</strong> Uso de Blob API com createObjectURL() e revokeObjectURL() para gerenciamento de memória</li>
+                            <li><strong>Upload Robusto:</strong> Nomes de arquivo únicos (timestamp + random), validação, feedback visual</li>
+                            <li><strong>Tratamento de Erros:</strong> Try-catch em operações assíncronas, mensagens amigáveis, logs para debugging</li>
+                            <li><strong>Segurança:</strong> Validação de entrada, CORS configurado, não exposição de detalhes internos</li>
+                        </ul>
+                        
+                        <h3>Estrutura do Banco de Dados</h3>
+                        <pre><code>{
+                            nome: String,
+                            capa: String,
+                            fotos: [{
+                                caminho: String,
+                                descricao: String,
+                                dataUpload: Date
+                            }],
+                            dataCriacao: Date
+                            }
+                        </code></pre>
+                        
+                        <h3>Competências Demonstradas</h3>
+                        <div class="skills-demo">
+                            <span class="skill-tag">API RESTful Design</span>
+                            <span class="skill-tag">Manipulação de Arquivos</span>
+                            <span class="skill-tag">Integração Frontend-Backend</span>
+                            <span class="skill-tag">MongoDB & Mongoose</span>
+                            <span class="skill-tag">JavaScript Assíncrono</span>
+                            <span class="skill-tag">DOM Manipulation</span>
+                            <span class="skill-tag">Error Handling</span>
+                            <span class="skill-tag">FormData & Fetch API</span>
+                            <span class="skill-tag">Blob API</span>
+                            <span class="skill-tag">Multer Middleware</span>
+                        </div>
+                        
+                        <h3>Código de Exemplo (Download Otimizado)</h3>
+                        <pre><code>async function baixarImagem() {
+                            try {
+                                const resposta = await fetch(imagemModal.src);
+                                const blob = await resposta.blob();
+                                const urlBlob = window.URL.createObjectURL(blob);
+                                
+                                const link = document.createElement('a');
+                                link.href = urlBlob;
+                                link.download = nomeArquivo;
+                                
+                                document.body.appendChild(link);
+                                link.click();
+                                
+                                // Limpeza de memória
+                                document.body.removeChild(link);
+                                window.URL.revokeObjectURL(urlBlob);
+                            } catch (erro) {
+                                console.error("Erro ao baixar:", erro);
+                                window.open(imagemModal.src, '_blank'); // Fallback
+                            }
+                            }
+                        </code></pre>
+                        
+                        <div class="project-context">
+                            <h3>Contexto do Projeto</h3>
+                            <p>Este projeto demonstra habilidades completas em desenvolvimento full-stack, desde a concepção da arquitetura até a implementação de funcionalidades avançadas no frontend. O sistema é escalável e poderia ser estendido com autenticação, compartilhamento público, edição de imagens e busca avançada.</p>
+                            
+                            <p><strong>Casos de Uso:</strong> Galeria pessoal, portfólio profissional, sistema corporativo para gestão de imagens, aplicação educacional para compartilhamento de material visual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <p>&copy; 2025 Portfólio profissional. Todos os direitos reservados. GitHub: <a href="https://github.com/carloshenrique2701" target="_blank">carloshenrique2701</a></p>
- 
-        </footer>
-
-
-
-        <script src="js/script.js"></script>
+        <div class="modal" id="modal-estacionamento">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
+                <h2>Sistema de Gerenciamento de Estacionamento Inteligente</h2>
+                
+                <h3>📋 Visão Geral</h3>
+                <p>Um sistema backend completo para gestão de estacionamentos, desenvolvido com <strong>Node.js, Express e MongoDB</strong>. A aplicação permite controle de usuários, cadastro de veículos e gerenciamento de reservas de vagas com lógica de conflitos de horário.</p>
+                
+                <h3>🎯 Funcionalidades Principais</h3>
+                
+                <h4>👥 Módulo de Usuários</h4>
+                <ul>
+                    <li><strong>Cadastro e autenticação</strong> de usuários com verificação de e-mail duplicado</li>
+                    <li><strong>CRUD completo</strong> (Criar, Ler, Atualizar, Deletar)</li>
+                    <li><strong>Tipos de usuário</strong> com diferentes níveis de acesso</li>
+                    <li><strong>Sistema de login</strong> com validação de credenciais</li>
+                </ul>
+                
+                <h4>🚗 Módulo de Veículos</h4>
+                <ul>
+                    <li><strong>Cadastro de veículos</strong> com placa, modelo, cor e proprietário</li>
+                    <li><strong>Validação de placa</strong> para evitar duplicidades</li>
+                    <li><strong>Busca inteligente</strong> por placa (case-insensitive)</li>
+                    <li><strong>Gestão completa</strong> dos veículos cadastrados</li>
+                </ul>
+                
+                <h4>📅 Módulo de Reservas</h4>
+                <ul>
+                    <li><strong>Reserva de vagas</strong> com data, hora e vaga específica</li>
+                    <li><strong>Prevenção de conflitos</strong> - sistema detecta automaticamente reservas sobrepostas</li>
+                    <li><strong>Finalização de reservas</strong> com cálculo automático de valor (R$5/hora)</li>
+                    <li><strong>Relatórios flexíveis</strong> com filtros por data, placa e proprietário</li>
+                    <li><strong>Busca por dia específico</strong> para visualização de ocupação</li>
+                </ul>
+                
+                <h3>🛠️ Tecnologias Utilizadas</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Node.js + Express</li>
+                    <li><strong>Banco de Dados:</strong> MongoDB com Mongoose ODM</li>
+                    <li><strong>Middleware:</strong> CORS, Body-parser</li>
+                    <li><strong>Arquitetura:</strong> REST API com endpoints organizados</li>
+                </ul>
+                
+                <h3>🚀 Destaques Técnicos</h3>
+                
+                <h4>Lógica de Negócio Avançada</h4>
+                <p>Sistema anti-conflito de reservas que prevê sobreposições de horários em uma mesma vaga.</p>
+                
+                <h4>Cálculo Automático de Valores</h4>
+                <p>Cálculo preciso do tempo de estacionamento com arredondamento para cima e tarifa de R$5 por hora.</p>
+                
+                <h4>Sistema de Relatórios</h4>
+                <ul>
+                    <li>Filtros por intervalo de datas</li>
+                    <li>Busca por placa ou proprietário</li>
+                    <li>Fallback para últimos 7 dias quando datas não informadas</li>
+                    <li>Expressões regulares para busca parcial (case-insensitive)</li>
+                </ul>
+                
+                <h3>🔧 API Endpoints</h3>
+                
+                <h4>Usuários</h4>
+                <ul>
+                    <li><code>POST /api/usuarios/cadastrar</code> - Cadastro</li>
+                    <li><code>POST /api/usuarios/logar</code> - Login</li>
+                    <li><code>GET /api/usuarios</code> - Listar todos</li>
+                    <li><code>GET /api/usuarios/:id</code> - Buscar por ID</li>
+                    <li><code>PUT /api/usuarios/:id</code> - Atualizar</li>
+                    <li><code>DELETE /api/usuarios/:id</code> - Excluir</li>
+                </ul>
+                
+                <h4>Veículos</h4>
+                <ul>
+                    <li><code>POST /api/veiculos/cadastrar</code> - Cadastro</li>
+                    <li><code>GET /api/veiculos</code> - Listar (com filtro opcional por placa)</li>
+                    <li><code>GET /api/veiculos/:id</code> - Buscar por ID</li>
+                    <li><code>PUT /api/veiculos/:id</code> - Atualizar</li>
+                    <li><code>DELETE /api/veiculos/:id</code> - Excluir</li>
+                </ul>
+                
+                <h4>Reservas</h4>
+                <ul>
+                    <li><code>POST /api/reservas</code> - Criar reserva</li>
+                    <li><code>GET /api/reservas</code> - Listar por data específica</li>
+                    <li><code>GET /api/reservas/relatorio</code> - Gerar relatório com filtros</li>
+                    <li><code>GET /api/reservas/:id</code> - Buscar reserva</li>
+                    <li><code>PUT /api/reservas/finalizar/:id</code> - Finalizar reserva (cálculo de valor)</li>
+                    <li><code>DELETE /api/reservas/:id</code> - Cancelar reserva</li>
+                </ul>
+                
+                <h3>⚙️ Configuração e Execução</h3>
+                <pre>
+                    # Instalação
+                    npm install express cors mongoose body-parser
+                    
+                    # Execução
+                    node app.js
+                    # Servidor rodando na porta 3000
+                </pre>
+                
+                <h3>🛡️ Tratamento de Erros</h3>
+                <ul>
+                    <li><strong>Status codes apropriados</strong> (200, 201, 400, 404, 500)</li>
+                    <li><strong>Mensagens amigáveis</strong> para o cliente</li>
+                    <li><strong>Logs detalhados</strong> no console para debugging</li>
+                    <li><strong>Validações em múltiplas camadas</strong></li>
+                </ul>
+                
+                <h3>📈 Impacto e Benefícios</h3>
+                <ul>
+                    <li><strong>Redução de conflitos</strong> em reservas de vagas</li>
+                    <li><strong>Automatização completa</strong> do cálculo de valores</li>
+                    <li><strong>Relatórios estratégicos</strong> para gestão do estacionamento</li>
+                    <li><strong>Interface RESTful</strong> para integração com frontend ou apps mobile</li>
+                </ul>
+                
+                <h3>💡 Para Adicionar ao Portfólio:</h3>
+                <ol>
+                    <li><strong>Inclua diagramas</strong> da arquitetura e fluxo de reservas</li>
+                    <li><strong>Mostre exemplos</strong> das requisições/respostas da API</li>
+                    <li><strong>Destaque a lógica complexa</strong> do sistema anti-conflito</li>
+                    <li><strong>Mencione possíveis melhorias</strong>:
+                        <ul>
+                            <li>Autenticação JWT</li>
+                            <li>Sistema de notificações</li>
+                            <li>Dashboard administrativo</li>
+                            <li>Integração com pagamentos</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <p>Este projeto demonstra <strong>habilidades sólidas em backend, lógica de negócio, design de APIs REST e integração com MongoDB</strong> - perfeito para mostrar suas capacidades como desenvolvedor full-stack ou back-end.</p>
+            </div>
+        </div>
 
         
+        <div class="modal" id="modal-supermercado">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
+                <h2>Sistema de Gestão Comercial (ERP Simplificado)</h2>
+                
+                <h3>📋 Visão Geral</h3>
+                <p>Este é um sistema completo de gestão empresarial desenvolvido com <strong>Node.js + Express</strong> e <strong>MongoDB</strong>, projetado para gerenciar múltiplos aspectos de uma empresa, incluindo controle de estoque, vendas, clientes, fornecedores e usuários. O sistema possui uma interface web integrada que se comunica com a API através do mesmo servidor.</p>
+                
+                <h3>🏗️ Arquitetura Técnica</h3>
+                <ul>
+                    <li><strong>Backend</strong>: Node.js + Express.js</li>
+                    <li><strong>Banco de Dados</strong>: MongoDB (com Mongoose ODM)</li>
+                    <li><strong>Frontend</strong>: HTML, CSS e JavaScript puro (vanilla)</li>
+                    <li><strong>Comunicação</strong>: API RESTful com JSON</li>
+                    <li><strong>Porta</strong>: 3000</li>
+                    <li><strong>CORS</strong>: Habilitado para todas as origens</li>
+                </ul>
+                
+                <h3>📊 Módulos Principais</h3>
+                
+                <h4>1. Módulo de Autenticação e Usuários</h4>
+                <ul>
+                    <li><strong>Login</strong>: Sistema de autenticação simples (email/senha)</li>
+                    <li><strong>Gestão de Usuários</strong>: CRUD completo com validação de email único</li>
+                </ul>
+                
+                <h4>2. Módulo de Fornecedores</h4>
+                <ul>
+                    <li>Gestão completa de fornecedores</li>
+                    <li>Cadastro com nome, telefone e email</li>
+                    <li>Validação de nomes duplicados</li>
+                </ul>
+                
+                <h4>3. Módulo de Clientes</h4>
+                <ul>
+                    <li>Gestão de clientes com CPF, nome, telefone e endereço</li>
+                    <li>Validação de CPF único</li>
+                    <li>Formatação automática de CPF (XXX.XXX.XXX-XX)</li>
+                </ul>
+                
+                <h4>4. Módulo de Produtos</h4>
+                <ul>
+                    <li>Controle de estoque avançado</li>
+                    <li>Cadastro com código, nome, descrição, preço e quantidade</li>
+                    <li>Validação de código e nome únicos</li>
+                    <li>Associação com fornecedores</li>
+                </ul>
+                
+                <h4>5. Módulo de Vendas</h4>
+                <ul>
+                    <li>Processo completo de vendas</li>
+                    <li>Carrinho de compras em tempo real</li>
+                    <li>Cálculo automático de totais e subtotais</li>
+                    <li>Redução automática do estoque</li>
+                </ul>
+                
+                <h4>6. Módulo de Relatórios</h4>
+                <ul>
+                    <li>Sistema avançado de relatórios de vendas</li>
+                    <li>Filtro por período de datas (padrão: últimos 7 dias)</li>
+                    <li>Filtro por fornecedor, produto e cliente</li>
+                </ul>
+                
+                <h3>🔄 Funcionalidades Especiais</h3>
+                <h4>Processo de Venda</h4>
+                <ol>
+                    <li>Busca de produtos por código</li>
+                    <li>Adição ao carrinho com quantidade ajustável</li>
+                    <li>Cálculo automático em tempo real</li>
+                    <li>Verificação de estoque disponível</li>
+                    <li>Finalização com redução automática do estoque</li>
+                </ol>
+                
+                <h4>Interface Web Integrada</h4>
+                <p><strong>Páginas incluídas</strong>:</p>
+                <ul>
+                    <li><code>login.html</code> - Autenticação de usuários</li>
+                    <li><code>telaPrincipal.html</code> - Dashboard principal</li>
+                    <li><code>menu.html</code> - Menu de configurações</li>
+                    <li><code>listaUsuarios.html</code> - Gestão de usuários</li>
+                    <li><code>cadastroUsuario.html</code> - Formulário de usuários</li>
+                    <li>Páginas similares para fornecedores, produtos, clientes</li>
+                </ul>
+                
+                <h3>🔗 Rotas Principais da API</h3>
+                <ul>
+                    <li><code>POST /login</code> - Autenticação</li>
+                    <li><code>POST /usuarios</code> - Criar usuário</li>
+                    <li><code>GET /usuarios</code> - Listar todos</li>
+                    <li><code>POST /vendas</code> - Registrar venda</li>
+                    <li><code>GET /relatorio/vendas</code> - Relatório filtrado</li>
+                </ul>
+                
+                <h3>💡 Tecnologias e Práticas Utilizadas</h3>
+                <ul>
+                    <li>MongoDB Relationships</li>
+                    <li>Express Middleware</li>
+                    <li>Mongoose Schemas</li>
+                    <li>Vanilla JavaScript</li>
+                    <li>Error Handling robusto</li>
+                </ul>
+                
+                <h3>🎯 Casos de Uso</h3>
+                <ul>
+                    <li><strong>Varejista pequeno/médio</strong>: Controle completo de estoque e vendas</li>
+                    <li><strong>Restaurante</strong>: Gestão de fornecedores e produtos</li>
+                    <li><strong>Loja física</strong>: PDV (Ponto de Venda) integrado</li>
+                    <li><strong>Administrador</strong>: Relatórios de desempenho</li>
+                </ul>
+                
+                <h3>⚡ Características de Desempenho</h3>
+                <ul>
+                    <li>Single Page Application (SPA-like)</li>
+                    <li>Atualizações em tempo real no carrinho</li>
+                    <li>Buscas instantâneas com filtro</li>
+                    <li>Interface responsiva e intuitiva</li>
+                </ul>
+                
+                <h3>🔧 Requisitos para Execução</h3>
+                <pre><code>
+                    npm install express cors mongoose
+                    node script.js
+                    # Acessar: http://localhost:3000/login.html
+                </code></pre>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+
     </body>
 </html>
