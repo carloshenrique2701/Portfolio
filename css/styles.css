@@ -103,7 +103,7 @@ main {
     border: 1px solid rgba(212, 175, 55, 0.2);
     box-shadow: 
         0 10px 30px rgba(0, 0, 0, 0.5),
-        0 0 50px rgba(212, 175, 55, 0.05);
+        0 0 50px rgba(212, 175, 55, 0.1);
     position: relative;
     overflow: hidden;
 
@@ -159,6 +159,7 @@ main {
 
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 
 }
 
@@ -506,8 +507,34 @@ footer {
     font-size: 0.9rem;
 }
 
+.project-links {
+
+    margin-top: 40px;
+
+}
+
+.project-links a {
+
+    background-color: #b8941f;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.project-links a:hover {
+
+    background-color: #d4af37;
+
+}
+
 .modal-close {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     background: rgba(212, 175, 55, 0.1);
@@ -602,4 +629,338 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #ffd700, #d4af37);
+}
+
+/* ADICIONE A PARTIR DAQUI - RESPONSIVIDADE PARA TELAS MENORES */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+    
+    /* Ajustes gerais do layout */
+    main {
+        margin-left: 0 !important;
+        margin-top: 70px; /* Compensa a barra lateral no topo */
+    }
+    
+    /* Barra lateral vai para o topo */
+    .sidebar {
+        width: 100% !important;
+        height: 70px !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: auto !important;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95) !important;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+        border-right: none !important;
+        border-top: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Ajuste dos cards sociais na barra superior */
+    .cardner {
+        flex-direction: row !important;
+        transform: none !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        height: 100%;
+        align-items: center;
+    }
+    
+    /* Ajuste dos contêineres sociais */
+    .socialContainer {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    /* Brilho na borda direita vai para baixo */
+    .conteudo {
+        position: relative;
+    }
+    
+    .conteudo::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+    
+    /* Ajustes no conteúdo das seções */
+    .conteudo {
+        padding: 80px 15px !important;
+        height: auto !important;
+        min-height: 100vh;
+    }
+    
+    /* Seção 1 - Ajustes */
+    .content-section1 {
+        padding: 40px 20px !important;
+        margin: 20px 0 !important;
+    }
+    
+    .content-section1 h1 {
+        font-size: 2rem !important;
+        line-height: 1.3;
+    }
+    
+    .content-section1 h3 {
+        font-size: 0.9rem !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .gifs {
+        height: 300px !important;
+        padding: 15px !important;
+        margin-top: 20px;
+    }
+    
+    .gifs img {
+        object-fit: cover;
+        max-height: 100%;
+    }
+    
+    /* Seção 2 - Projetos */
+    .content-section2 h1 {
+        font-size: 2.2rem !important;
+        top: 0 !important;
+        margin-bottom: 40px !important;
+    }
+    
+    .card {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+        top: 0 !important;
+    }
+    
+    .card h2 {
+        font-size: 1.2rem !important;
+    }
+    
+    .card p {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+    
+    /* Seção 3 - Skills */
+    .content-section3 {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 20px 15px !important;
+    }
+    
+    .soft-skills, .hard-skills {
+        padding: 25px !important;
+    }
+    
+    .soft-skills h2, .hard-skills h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .soft-skills li, .hard-skills li {
+        font-size: 1rem !important;
+        padding: 8px 0 !important;
+        padding-left: 15px !important;
+    }
+    
+    .neuronios {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100% !important;
+        height: 200px !important;
+        margin: 20px auto;
+        border-radius: 10px !important;
+        object-fit: cover;
+    }
+    
+    /* Footer ajustado */
+    footer {
+        padding: 20px 15px !important;
+        margin-top: 50px;
+    }
+    
+    /* Modais responsivos */
+    .modal {
+        padding-left: 0 !important;
+        padding-top: 70px; /* Compensa a barra superior */
+    }
+    
+    .modal-content {
+        width: 95% !important;
+        max-height: 85vh !important;
+        padding: 25px 15px !important;
+        margin: 10px auto !important;
+        border-radius: 15px !important;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.4rem !important;
+        margin: 20px 0 10px !important;
+    }
+    
+    .modal-content h4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .modal-content p, .modal-content li {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+    
+    .modal-content pre {
+        padding: 10px !important;
+        font-size: 0.8rem !important;
+        overflow-x: auto;
+    }
+    
+    .modal-close {
+        top: 90px !important; /* Abaixo da barra lateral */
+        right: 15px !important;
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    /* Ajuste para tags de tecnologia nos modais */
+    .tech-tags, .features-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .tag, .feature-card {
+        font-size: 0.8rem !important;
+        padding: 5px 10px !important;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .project-links a {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    /* Ajustes para APIs endpoints */
+    .api-endpoints {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .endpoint code {
+        font-size: 0.8rem !important;
+        word-break: break-all;
+    }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media screen and (max-width: 480px) {
+    
+    .content-section1 h1 {
+        font-size: 1.7rem !important;
+    }
+    
+    .content-section1 h3 {
+        font-size: 0.8rem !important;
+        letter-spacing: 1px !important;
+    }
+    
+    .gifs {
+        height: 200px !important;
+    }
+    
+    .content-section2 h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .card h2 {
+        font-size: 1.1rem !important;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .cardner {
+        gap: 10px !important;
+    }
+    
+    .socialContainer {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    /* Ajuste de padding geral para elementos */
+    .conteudo {
+        padding: 70px 10px !important;
+    }
+    
+    .soft-skills, .hard-skills {
+        padding: 20px 15px !important;
+    }
+}
+
+/* Para telas em modo paisagem (landscape) em celulares */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    
+    .sidebar {
+        height: 60px !important;
+    }
+    
+    main {
+        margin-top: 60px !important;
+    }
+    
+    .conteudo {
+        padding: 60px 15px !important;
+        min-height: auto;
+    }
+    
+    .modal {
+        padding-top: 60px !important;
+    }
+    
+    .modal-close {
+        top: 70px !important;
+    }
+    
+    .gifs {
+        height: 200px !important;
+    }
+}
+
+/* Ajuste de scroll suave para dispositivos móveis */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Ajuste para evitar zoom em inputs em iOS */
+@media screen and (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px; /* Evita zoom automático no iOS */
+    }
 }

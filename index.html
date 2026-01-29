@@ -268,34 +268,34 @@
                         <div class="code-highlights">
                             <h4>💡 Destaques do Código</h4>
                             <pre><code>
-                                const Post = require('./models/Post');
+const Post = require('./models/Post');
 
-                                //Confira o armazenamento de arquivos no disco utilizando o "multer".
-                                //O objeto "multer.diskStorage" permite configurar onde e como os arquivos devem ser armazenados no servidor.
-                                const storage = multer.diskStorage({
-                                    //Determina o diretório onde os arquivos devem ser salvos.
-                                    destination: function (req, file, cb) {
-                                        //"callback" é usado para especificar o destino dos arquivos.
-                                        //O primeiro parâmetro é um possível erro (null se não houver erro), e o segundo é o caminho do diretório
-                                        cb(null, "uploads");
-                                    },
+//Confira o armazenamento de arquivos no disco utilizando o "multer".
+//O objeto "multer.diskStorage" permite configurar onde e como os arquivos devem ser armazenados no servidor.
+const storage = multer.diskStorage({
+    //Determina o diretório onde os arquivos devem ser salvos.
+    destination: function (req, file, cb) {
+        //"callback" é usado para especificar o destino dos arquivos.
+        //O primeiro parâmetro é um possível erro (null se não houver erro), e o segundo é o caminho do diretório
+        cb(null, "uploads");
+    },
 
-                                    //Determina o nome do arquivo dentro do diretório de destino.
-                                    //Também é chamada sempre que um arquivo é recebido.
-                                    filename: function (req, file, cb) {
-                                        //Gera um sufixo único no arquifo para evitar asobreposição de nomes.
-                                        // Data atual - numero aleatório entre 0 e 1bi
-                                        //1e9 é conotação para 1 x 10^9 = 1bi
-                                        //Math.round => arredonda para o inteiro mais próximo.
-                                        const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9)
+    //Determina o nome do arquivo dentro do diretório de destino.
+    //Também é chamada sempre que um arquivo é recebido.
+    filename: function (req, file, cb) {
+        //Gera um sufixo único no arquifo para evitar asobreposição de nomes.
+        // Data atual - numero aleatório entre 0 e 1bi
+        //1e9 é conotação para 1 x 10^9 = 1bi
+        //Math.round => arredonda para o inteiro mais próximo.
+        const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9)
 
-                                        //Primeiro parâmetro define um possível erro, o segundo o m=nome do arquivo.
-                                        cb(null, uniqueSuffix + "-" + file.originalname)
-                                    }
-                                });
+        //Primeiro parâmetro define um possível erro, o segundo o m=nome do arquivo.
+        cb(null, uniqueSuffix + "-" + file.originalname)
+    }
+});
 
-                                //Instâcia com a configuração especificada acima. Será usada em rotas que recebem arquivos
-                                const upload = multer({ storage });
+//Instâcia com a configuração especificada acima. Será usada em rotas que recebem arquivos
+const upload = multer({ storage });
                              </code></pre>
                         </div>
                         
@@ -311,7 +311,7 @@
                     </div>
                     
                     <div class="project-links">
-                            <a href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20129%20-%20Blog%20simples%20com%20MongoDB" class="btn btn-primary">📁 Ver Código no GitHub</a>
+                            <a target="_blank" href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20129%20-%20Blog%20simples%20com%20MongoDB" class="btn btn-primary">📁 Ver Código no GitHub</a>
                     </div>
                 </div>
                 
@@ -431,15 +431,15 @@
                         
                         <h3>Estrutura do Banco de Dados</h3>
                         <pre><code>{
-                            nome: String,
-                            capa: String,
-                            fotos: [{
-                                caminho: String,
-                                descricao: String,
-                                dataUpload: Date
-                            }],
-                            dataCriacao: Date
-                            }
+nome: String,
+capa: String,
+fotos: [{
+    caminho: String,
+    descricao: String,
+    dataUpload: Date
+}],
+dataCriacao: Date
+}
                         </code></pre>
                         
                         <h3>Competências Demonstradas</h3>
@@ -458,36 +458,36 @@
                         
                         <h3>Código de Exemplo (Download Otimizado)</h3>
                         <pre><code>async function baixarImagem() {
-                            try {
-                                const resposta = await fetch(imagemModal.src);
-                                const blob = await resposta.blob();
-                                const urlBlob = window.URL.createObjectURL(blob);
-                                
-                                const link = document.createElement('a');
-                                link.href = urlBlob;
-                                link.download = nomeArquivo;
-                                
-                                document.body.appendChild(link);
-                                link.click();
-                                
-                                // Limpeza de memória
-                                document.body.removeChild(link);
-                                window.URL.revokeObjectURL(urlBlob);
-                            } catch (erro) {
-                                console.error("Erro ao baixar:", erro);
-                                window.open(imagemModal.src, '_blank'); // Fallback
-                            }
-                            }
+    try {
+        const resposta = await fetch(imagemModal.src);
+        const blob = await resposta.blob();
+        const urlBlob = window.URL.createObjectURL(blob);
+        
+        const link = document.createElement('a');
+        link.href = urlBlob;
+        link.download = nomeArquivo;
+        
+        document.body.appendChild(link);
+        link.click();
+        
+        // Limpeza de memória
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(urlBlob);
+    } catch (erro) {
+        console.error("Erro ao baixar:", erro);
+        window.open(imagemModal.src, '_blank'); // Fallback
+    }
+}
                         </code></pre>
-                        
-                        <div class="project-context">
-                            <h3>Contexto do Projeto</h3>
-                            <p>Este projeto demonstra habilidades completas em desenvolvimento full-stack, desde a concepção da arquitetura até a implementação de funcionalidades avançadas no frontend. O sistema é escalável e poderia ser estendido com autenticação, compartilhamento público, edição de imagens e busca avançada.</p>
-                            
-                            <p><strong>Casos de Uso:</strong> Galeria pessoal, portfólio profissional, sistema corporativo para gestão de imagens, aplicação educacional para compartilhamento de material visual.</p>
-                        </div>
+                    
                     </div>
                 </div>
+
+                <div class="project-links">
+                    <a target="_blank" href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20130%20-%20%C3%81lbum%20de%20Fotos%20com%20MongoDB" class="btn btn-primary">📁 Ver Código no GitHub</a>
+                </div>
+            
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
             </div>
         </div>
 
@@ -583,12 +583,12 @@
                 
                 <h3>⚙️ Configuração e Execução</h3>
                 <pre>
-                    # Instalação
-                    npm install express cors mongoose body-parser
-                    
-                    # Execução
-                    node app.js
-                    # Servidor rodando na porta 3000
+# Instalação
+npm install express cors mongoose body-parser
+
+# Execução
+node server.js
+# Servidor rodando na porta 3000
                 </pre>
                 
                 <h3>🛡️ Tratamento de Erros</h3>
@@ -606,23 +606,12 @@
                     <li><strong>Relatórios estratégicos</strong> para gestão do estacionamento</li>
                     <li><strong>Interface RESTful</strong> para integração com frontend ou apps mobile</li>
                 </ul>
-                
-                <h3>💡 Para Adicionar ao Portfólio:</h3>
-                <ol>
-                    <li><strong>Inclua diagramas</strong> da arquitetura e fluxo de reservas</li>
-                    <li><strong>Mostre exemplos</strong> das requisições/respostas da API</li>
-                    <li><strong>Destaque a lógica complexa</strong> do sistema anti-conflito</li>
-                    <li><strong>Mencione possíveis melhorias</strong>:
-                        <ul>
-                            <li>Autenticação JWT</li>
-                            <li>Sistema de notificações</li>
-                            <li>Dashboard administrativo</li>
-                            <li>Integração com pagamentos</li>
-                        </ul>
-                    </li>
-                </ol>
-                
-                <p>Este projeto demonstra <strong>habilidades sólidas em backend, lógica de negócio, design de APIs REST e integração com MongoDB</strong> - perfeito para mostrar suas capacidades como desenvolvedor full-stack ou back-end.</p>
+
+                <div class="project-links">
+                    <a target="_blank" href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20131%20-%20Controle%20de%20Estacionamento%20com%20MongoDB" class="btn btn-primary">📁 Ver Código no GitHub</a>
+                </div>
+            
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
             </div>
         </div>
 
@@ -747,10 +736,17 @@
                 
                 <h3>🔧 Requisitos para Execução</h3>
                 <pre><code>
-                    npm install express cors mongoose
-                    node script.js
-                    # Acessar: http://localhost:3000/login.html
+npm install express cors mongoose
+node server.js
+# Acessar: http://localhost:3000/login.html
                 </code></pre>
+
+
+                <div class="project-links">
+                    <a target="_blank" href="https://github.com/carloshenrique2701/memory/tree/main/Projetos/Projetos%20128%20a%20132%20-%20MongoDB/Projeto%20132%20-%20Super-mercado%20simples%20com%20MongoDB%20" class="btn btn-primary">📁 Ver Código no GitHub</a>
+                </div>
+            
+                <button class="modal-close" onclick="closeModal('modal-blog')">×</button>
             </div>
         </div>
 
